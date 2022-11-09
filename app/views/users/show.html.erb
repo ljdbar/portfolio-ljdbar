@@ -2,25 +2,27 @@
 
 <h3>Full Stack Developer</h3>
 
-<p>@users.each do |u|</p>
-<h1>u.name (add to table)</h1>
+<h1> <%= @user.name %> </h1>
 
-<h5>u.location (ATT)</h5> <h5> u.languages (ATT)</h5> <h5>u.availability (ATT)</h5>
+<h5> <%= @user.location %> </h5> <h5> <%= @user.language %> </h5> <h5> <%= @user.availability %> </h5>
 
 <button> SHare portfolio</button>
 
+<p>----------------------------------------------------------------------------------</p>
 <h2>Projects</h2>
 
 <p>project one card</p>
 <p>project 2 card</p>
 <p>project 3 card</p>
 
+<p>---------------------------------------------------------------------------------</p>
+
 <h2>About</h2>
 
 <h5>Tech Stack</h5>
 <p>etc</p>
 <h5>BIO</h5>
-<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.</p>
+<p> <%= @user.bio %> </p>
 
 
 <h5>coding Education</h5>
@@ -28,7 +30,7 @@
 
 <h5>Social Media Profiles</h5>
 <p>github, linked</p>
-<p>-------------------------</p>
+<p>---------------------------------------------------------------------------------</p>
 
 
 
