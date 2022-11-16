@@ -1,39 +1,54 @@
-<h1>Picture here</h1>
+<div id="show-page">
 
-<h3>Full Stack Developer</h3>
+  <div class="profile">
+    <h1>Picture here</h1>
 
-<h1> <%= @user.name %> </h1>
+    <h3>Full Stack Developer</h3>
 
-<h5> <%= @user.location %> </h5> <h5> <%= @user.language %> </h5> <h5> <%= @user.availability %> </h5>
+    <h1> <%= @user.name %> </h1>
 
-<button> SHare portfolio</button>
+    <div class="profile-info">
+      <p><h5>📍<%= @user.location.capitalize %></h5></p>
+      <p><h5>💬 <%= @user.language.capitalize %></h5></p>
+      <p><h5>🌐 <%= "Remote/Hybrid" %></h5></p>
+    </div>
 
-<p>----------------------------------------------------------------------------------</p>
-<h2>Projects</h2>
+    <button>SHare portfolio</button>
+  </div>
 
-<p>project one card</p>
-<p>project 2 card</p>
-<p>project 3 card</p>
+  <p>----------------------------------------------------------------------------------</p>
 
-<p>---------------------------------------------------------------------------------</p>
+  <div class="projects">
+    <h2>Projects</h2>
 
-<h2>About</h2>
+    <p>project one card</p>
+    <p>project 2 card</p>
+    <p>project 3 card</p>
 
-<h5>Tech Stack</h5>
-<p>etc</p>
-<h5>BIO</h5>
-<p> <%= @user.bio %> </p>
+  </div>
+
+  <p>---------------------------------------------------------------------------------</p>
+
+  <div class="about">
+    <h2>About</h2>
+
+    <h5>Tech Stack</h5>
+    <p>etc</p>
+    <h5>BIO</h5>
+    <p> <%= @user.bio %> </p>
 
 
-<h5>coding Education</h5>
-<p>address and grad date</p>
+    <h5>coding Education</h5>
+    <p>address and grad date</p>
 
-<h5>Social Media Profiles</h5>
-<p>github, linked</p>
-<p>---------------------------------------------------------------------------------</p>
+    <h5>Social Media Profiles</h5>
+    <p>github, linked</p>
+  </div>
+  <p>---------------------------------------------------------------------------------</p>
 
 
 
-<h2><%= current_user %></h2>
+  <h2><%= current_user %></h2>
 
-<h2><%= @user.id %></h2>
+  <h2><%= @user.id %></h2>
+</div>
