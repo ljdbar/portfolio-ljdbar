@@ -1,6 +1,7 @@
 // Specific CSS for your home-page
 #show-page {
   font-family: "Lato", sans-serif;
+  margin: 30px;
 }
 
 .profile {
@@ -27,4 +28,43 @@
   p {
     // width: 20%;
   }
+}
+
+.about {
+  h2 {
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+
+  h5 {
+    font-weight: bold;
+  }
+
+  .stack-bio {
+    display: flex;
+
+    .stack {
+      width: 30%;
+    }
+
+    .bio {
+      width: 70%;
+    }
+  }
+
+  .edu-social {
+    .education {
+      h5 {
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 0px;
+      }
+    }
+
+    .social {
+      padding-top: 20px;
+    }
+  }
+
 }
