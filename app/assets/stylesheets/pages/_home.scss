@@ -45,6 +45,9 @@
 
     .stack {
       width: 30%;
+      .d-flex {
+        flex-wrap: wrap;
+      }
     }
 
     .bio {
