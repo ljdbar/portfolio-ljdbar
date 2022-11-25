@@ -8,9 +8,13 @@
     <h1> <%= @user.name %> </h1>
 
     <div class="profile-info">
-      <%# <p><h5>📍<%= @user.location.capitalize %></h5></p> %>
-      <%# <p><h5>💬 <%= @user.language.capitalize %></h5></p> %>
+      <p><h5>📍<%= @user.location.capitalize %></h5></p>
+      <p><h5>💬 <%= @user.language.capitalize %></h5></p>
+      <% if @user.availability %>
       <p><h5>🌐 <%= "Remote/Hybrid" %></h5></p>
+      <% else %>
+      <p><h5>🌐 <%= "Facetoface" %></h5></p>
+      <% end %>
     </div>
 
     <button>SHare portfolio</button>
